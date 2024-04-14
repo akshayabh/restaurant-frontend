@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <style>
+        body{
+            background-image: url(https://wallpaperaccess.com/full/3692584.jpg);
+        }
+        h1{
+            text-align: center;
+            margin-top: 300px;
+            color: beige;
+            font-size: 80px;
+            text-shadow: 8px 8px 10px rgba(212, 74, 39, 0.5);
+        }
+        button{
+            display: block;
+            margin: auto;
+            height: 50px;
+            width: 250px;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            border: none;
+            border-radius: 40px; 
+            background: rgb(208, 68, 68);
+            box-shadow: 4px 4px 8px rgba(236, 6, 6, 0.2); 
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff7878, #7878ff, #78ffab); /* Darker gradient colors */
+        }
+        .arrow {
+            position: absolute;
+            left: 54%; 
+            top: 58.5%; 
+            transform: translateY(-50%); 
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO OUR RESTAURANT</h1>
+        <button onclick="openPage()">Slide Now <span class="arrow">&#8594;</span> </button>
+    </div>
+  
+
+<script>
+    function openPage() {
+        window.location.href = '../restaurant/inner.html';
+    }
+</script>
+
+</body>
+</html>

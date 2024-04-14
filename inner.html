@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+        body{
+                 background-image: url(https://live.staticflickr.com/6075/6107104792_fe011437f6_b.jpg);
+          }
+
+        .btn{
+            display: block;
+            margin: auto;
+            margin-top: 150px;
+            height: 100px;
+            width: 300px;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            border: none;
+            border-radius: 40px; 
+            background: rgb(208, 68, 68);
+            box-shadow: 4px 4px 8px rgba(236, 6, 6, 0.2); 
+            margin-bottom: 100px;
+        }
+
+        .arrow {
+            position: absolute;
+            left: 54%; 
+            top: 26%; 
+            transform: translateY(-50%); 
+            font-size: 40px;
+        }
+
+        h1{
+            color: rgb(21, 10, 227);
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .image-container {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: antiquewhite;
+        }
+
+        .form-container {
+            width: 50%;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+   <div class="btn-b">
+    <button class="btn" onclick="openPage()">Start ordering our delicious food <span class="arrow">&#8594;</span></button>
+   </div>
+   
+   
+   <div class="container">
+    <h1>For queries</h1>
+            <div class="image-container">
+                <img src="https://i.makeagif.com/media/5-07-2015/fzyq6Y.gif" height="350px" width="350px" alt="image not found">
+            </div>
+            <div class="form-container">
+                <form action="right.html">
+                    <label for="Name">Name : </label>
+                    <input type="text" id="Name">
+                    <br><br>
+                    <label for="PhNo">Phone Number : </label>
+                    <input type="number" id="PhNo">
+                    <br><br>
+                    <label for="Query">Enter your Query : </label>
+                    <textarea name="Query" id="Query" cols="30" rows="10"></textarea>
+                    <br><br>
+                   <button>Submit</button>
+               </form>
+            </div>
+   </div>
+   <script>
+    function openPage() {
+        window.location.href = '../restaurant/main.html';
+    }
+</script>
+</body>
+</html>
